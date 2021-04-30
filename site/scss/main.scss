@@ -1,0 +1,13 @@
+$background: yellow;
+
+body{
+  background-color: $background;
+  height: 100vh;
+
+  nav{
+
+    p{
+      background-color: #ff0000;
+    }
+  }
+}
