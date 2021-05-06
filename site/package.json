@@ -1,23 +1,7 @@
 {
-  "name": "bierenvriend",
-  "version": "0.0.1",
-  "description": "Een abonnement voor speciaalbier! Elke maand bij jou thuis bezorgd.",
-  "main": "tailwind.config.js",
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "json": "^11.0.0",
-    "npm-watch": "^0.9.0",
-    "pkg": "^5.1.0",
-    "postcss": "^8.2.12",
-    "tailwindcss": "^2.1.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "bier"
-  ],
-  "author": "Lau de Hoop",
-  "license": "ISC"
+    "postcss": "^8.2.13",
+    "tailwindcss": "^2.1.2"
+  }
 }
