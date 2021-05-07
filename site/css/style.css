@@ -1,3 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+section {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 67px;
+}
+
+h2 {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+p, li {
+  font-family: "Segoe UI", sans-serif;
+}
+
+li {
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+li a:hover {
+  color: #E6FF00;
+}
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 250px;
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.nav .container {
+  padding: 0;
+  background: #F28E1C;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .container .navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
+}
+.nav .container .navigation .img-holder {
+  width: 100px;
+  display: flex;
+}
+.nav .container .navigation .title {
+  padding-left: 25px;
+}
+.nav .container .navigation .links {
+  padding: 0 25px;
+}
+.nav .container .navigation .links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.nav .container .navigation .links ul li {
+  padding: 0 25px;
+}
+.nav .container .profile {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
+}
 
 /*# sourceMappingURL=style.css.map */
