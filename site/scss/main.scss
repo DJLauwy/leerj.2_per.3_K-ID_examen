@@ -21,10 +21,10 @@ $test: 1px solid #000;
   margin:0;
   padding:0;
   box-sizing: border-box;
+  line-height:1;
 }
 section{
   width:100%;
-  height:100%;
 }
 
 //Text
@@ -33,12 +33,12 @@ h1{
   font-family: $segoe;
   font-weight: bold;
   color:white;
-  font-size: 67px;
+  font-size: 50px;
 }
 h2{
   font-family: $segoe;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
 }
 p, li{
   font-family: $segoe;
@@ -46,7 +46,7 @@ p, li{
 li{
   font-weight: bold;
   color:white;
-  font-size:40px;
+  font-size:30px;
   a{
     color:#fff;
     text-decoration: none;
@@ -56,12 +56,31 @@ li{
     }
   }
 }
+.button{
+  margin:20px 0;
+  a{
+    padding:10px 20px;
+    background-color:$beer;
+    font-family: $segoe;
+    font-weight: bold;
+    color:#fff;
+    border-radius:30px;
+    text-decoration: none;
+    border:2px solid $beer;
+    transition: all .2s ease-in-out;
+    &:hover{
+      background-color:#fff;
+      color:$beer;
+    }
+  }
+}
 
 //Container
 $container_max: 1920px;
 .container{
   max-width: $container_max;
   margin:auto;
+  height:100%;
 
   //Padding
   padding:0 250px;
@@ -82,6 +101,8 @@ $container_max: 1920px;
 // --- SECTIONS --- ///
 //Section: Navigation
 .nav{
+  position: fixed;
+
   .container{
     padding:0;
     background: $default;
@@ -128,8 +149,90 @@ $container_max: 1920px;
       display: flex;
       justify-content: space-between;
       margin:0 25px;
-      svg{
+      a {
+        svg {
 
+        }
+      }
+    }
+  }
+}
+
+.hero{
+  padding-top:130px;
+
+  .background {
+    background:url('../img/hero_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height:420px;
+
+    .container {
+      background: rgba(0, 0, 0, .42);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        padding: 15px 0;
+      }
+
+      .button {
+        padding: 15px 0;
+
+        a {
+          background-color: $cta;
+          border: 2px solid $cta;
+
+          &:hover {
+            color: $cta;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.featured-left{
+  .container{
+    margin:150px 0;
+
+    .row{
+      display: flex;
+      align-items: center;
+
+      .left{
+        .img-holder{
+          position: relative;
+          &::before{
+            position: absolute;
+            width:100%;
+            height:100%;
+            content:"";
+            top:-10px;
+            left:-10px;
+            background-color:$beer;
+            border-radius:30px;
+            z-index: -1;
+          }
+          img{
+            width:300px;
+            height:300px;
+            border-radius:30px;
+          }
+        }
+      }
+      .right{
+        padding-left:100px;
+
+        .title{
+          padding-bottom:25px;
+        }
+        .content{
+          padding-bottom: 25px;
+        }
       }
     }
   }
