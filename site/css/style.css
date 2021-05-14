@@ -210,6 +210,10 @@ input[type=file] {
   justify-content: space-between;
   margin: 0 25px;
 }
+.nav .container .profile a img {
+  border-radius: 50%;
+}
+
 .no-hero {
   position: static;
 }
@@ -243,6 +247,22 @@ input[type=file] {
 .hero .background .container .button a:hover {
   color: #F21C1C;
   background-color: #fff;
+}
+.hero .background .container .img-holder {
+  height: 350px;
+  width: 350px;
+}
+.hero .background .container .img-holder img {
+  height: 100%;
+  width: 100%;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.hero .background .bg-profile-cover {
+  background: none;
+}
+.hero .bg-profile {
+  background: url("../img/placeholder.png");
 }
 
 .footer {
@@ -492,8 +512,21 @@ input[type=file] {
   align-items: center;
   justify-content: center;
 }
+.usp .coloring .title h2 {
+  font-size: 50px;
+  color: #fff;
+}
 .usp .usp-home {
   background-color: #FFCC4D;
+}
+.usp .light-beer {
+  background-color: #F0A500;
+}
+.usp .beer {
+  background-color: #DD8600;
+}
+.usp .heavy-beer {
+  background-color: #660F10;
 }
 
 .pakketten .container {
@@ -600,6 +633,94 @@ input[type=file] {
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+.bierlijst .container .row {
+  display: flex;
+}
+.bierlijst .container .row .block {
+  width: 50%;
+  padding: 50px;
+}
+.bierlijst .container .row .block .content .regel {
+  display: flex;
+  padding: 5px 0;
+}
+.bierlijst .container .row .block .content .regel p {
+  font-size: 14px;
+}
+.bierlijst .container .row .block .content .regel p:first-child {
+  width: 50%;
+  font-weight: bold;
+}
+.bierlijst .container .row .block .content .regel p:nth-of-type(2) {
+  width: 40%;
+}
+.bierlijst .container .row .block .content .regel p:last-child {
+  font-weight: bold;
+  width: 10%;
+}
+
+.profile .container .row .head {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+.profile .container .row .head .title {
+  padding-right: 50px;
+}
+.profile .container .row .head .title h1 {
+  color: #000;
+}
+.profile .container .row .head .username {
+  padding-right: 50px;
+}
+.profile .container .row .head .username h2 {
+  color: #757575;
+  font-size: 35px;
+}
+.profile .container .row .head .rang h3 {
+  font-size: 32px;
+  padding: 20px 50px;
+  border: 5px solid #E6FF00;
+  background: url("../img/mystery.jpg");
+  background-position: center;
+  background-size: cover;
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 40px;
+}
+.profile .container .row .content {
+  padding-bottom: 25px;
+}
+.profile .container .row .content .strook {
+  display: flex;
+  padding: 10px 0;
+}
+.profile .container .row .content .strook img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.profile .container .row .content .strook p {
+  font-size: 25px;
+}
+.profile .container .row .content .strook .bier p:nth-of-type(2) {
+  padding-top: 20px;
+}
+
+.content .container .row {
+  padding: 50px 0;
+}
+.content .container .row .title {
+  padding: 15px 0;
+}
+.content .container .row .title h2 {
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
