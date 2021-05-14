@@ -72,7 +72,7 @@ form .veld {
   width: 100%;
   display: flex;
 }
-form .veld input, form .veld textarea, form .veld select {
+form .veld input, form .veld textarea, form .veld select, form .veld label {
   width: 100%;
   margin: 25px 0;
 }
@@ -81,6 +81,21 @@ form .veld select option {
 }
 form .veld select option:first-child {
   color: #767676;
+}
+form .veld label {
+  background-color: #DD8600;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #DD8600;
+}
+form .veld label:hover {
+  background-color: #fff;
+  color: #DD8600;
 }
 form .voorwaarden {
   display: flex;
@@ -114,6 +129,10 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #fff;
   color: #DD8600;
+}
+
+input[type=file] {
+  display: none;
 }
 
 .container {
@@ -150,6 +169,7 @@ input[type=submit]:hover {
 
 .nav {
   position: fixed;
+  z-index: 5;
 }
 .nav .container {
   padding: 0;
@@ -275,6 +295,47 @@ input[type=submit]:hover {
   padding-bottom: 25px;
 }
 
+.featured-right .container {
+  margin: 150px 0;
+}
+.featured-right .container .row {
+  display: flex;
+  align-items: center;
+}
+.featured-right .container .row .left {
+  padding-right: 100px;
+}
+@media (max-width: 1024px) {
+  .featured-right .container .row .left {
+    padding-left: 50px;
+  }
+}
+.featured-right .container .row .left .title {
+  padding-bottom: 25px;
+}
+.featured-right .container .row .left .content {
+  padding-bottom: 25px;
+}
+.featured-right .container .row .right .img-holder {
+  position: relative;
+}
+.featured-right .container .row .right .img-holder::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: -10px;
+  left: -10px;
+  background-color: #DD8600;
+  border-radius: 30px;
+  z-index: -1;
+}
+.featured-right .container .row .right .img-holder img {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+
 .contact .container {
   margin: 100px 0;
 }
@@ -375,6 +436,24 @@ input[type=submit]:hover {
 .register .container .row .left .geenachttien {
   padding: 25px 0;
 }
+.register .container .row .left .content {
+  text-align: center;
+}
+.register .container .row .left .content h1 {
+  font-size: 30px;
+  padding: 5px 0;
+}
+.register .container .row .left .content p {
+  padding: 5px 0;
+}
+.register .container .row .left .content .button {
+  padding: 5px 0;
+}
+.register .container .row .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .register .container .row .right .img-holder {
   position: relative;
 }
@@ -400,6 +479,127 @@ input[type=submit]:hover {
     width: 400px;
     height: 400px;
   }
+}
+
+.usp {
+  width: 100%;
+  height: 140px;
+}
+.usp .coloring {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.usp .usp-home {
+  background-color: #FFCC4D;
+}
+
+.pakketten .container {
+  margin: 100px 0;
+}
+.pakketten .container .row .title {
+  padding: 25px 0;
+}
+.pakketten .container .row .title h3 {
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+.pakketten .container .block-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pakketten .container .block-holder .block {
+  padding: 2px;
+  width: 50%;
+  height: 350px;
+}
+.pakketten .container .block-holder .block .img-holder {
+  width: 100%;
+  height: 100%;
+}
+.pakketten .container .block-holder .block .img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.abonneren .container {
+  margin: 100px 0;
+}
+.abonneren .container .row .title {
+  padding: 25px 0;
+}
+.abonneren .container .row .title h2 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+.abonneren .container .block-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.abonneren .container .block-holder .block {
+  padding: 2px;
+  width: 50%;
+  height: 350px;
+}
+@media (max-width: 1550px) {
+  .abonneren .container .block-holder .block {
+    height: auto;
+  }
+}
+.abonneren .container .block-holder .block .content {
+  padding: 25px;
+  background-color: #FFCC4D;
+  height: 100%;
+}
+.abonneren .container .block-holder .block .content .soort-abbo {
+  height: 175px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abonneren .container .block-holder .block .content .soort-abbo .title h3, .abonneren .container .block-holder .block .content .soort-abbo .title h4 {
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 34px;
+}
+@media (max-width: 1550px) {
+  .abonneren .container .block-holder .block .content .soort-abbo .title h3, .abonneren .container .block-holder .block .content .soort-abbo .title h4 {
+    font-size: 25px;
+  }
+}
+.abonneren .container .block-holder .block .content .soort-abbo .title h4 {
+  font-weight: normal;
+}
+.abonneren .container .block-holder .block .content .text {
+  padding: 25px 0;
+  font-weight: bold;
+  color: #fff;
+}
+.abonneren .container .block-holder .block .mystery {
+  background: url("../img/mystery.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.abonneren .container .block-holder .block .mystery .soort-abbo {
+  border: 5px solid #E6FF00;
+}
+.abonneren .container .block-holder .block .mystery .text p {
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
