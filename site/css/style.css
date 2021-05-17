@@ -583,9 +583,15 @@ input[type=file] {
 }
 .abonneren .container .block-holder .block {
   display: block;
+  text-decoration: none;
   padding: 2px;
   width: 50%;
   height: 350px;
+  transition: all 0.2s ease-in-out;
+}
+.abonneren .container .block-holder .block:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 100px #000;
 }
 @media (max-width: 1550px) {
   .abonneren .container .block-holder .block {
@@ -610,6 +616,7 @@ input[type=file] {
   text-align: center;
   font-family: "Segoe UI", sans-serif;
   font-size: 34px;
+  color: #000;
 }
 @media (max-width: 1550px) {
   .abonneren .container .block-holder .block .content .soort-abbo .title h3, .abonneren .container .block-holder .block .content .soort-abbo .title h4 {

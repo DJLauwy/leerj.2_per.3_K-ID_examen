@@ -675,9 +675,17 @@ $container_max: 1920px;
       flex-wrap: wrap;
       .block{
         display: block;
+        text-decoration: none;
+
         padding:2px;
         width:50%;
         height:350px;
+
+        transition: all .2s ease-in-out;
+        &:hover{
+          transform: scale(1.1);
+          box-shadow: 0 0 100px #000;
+        }
 
         @media(max-width: 1550px){
           height:auto;
@@ -701,6 +709,7 @@ $container_max: 1920px;
                 text-align: center;
                 font-family: $segoe;
                 font-size:34px;
+                color:#000;
                 @media(max-width: 1550px){
                   font-size: 25px;
                 }
