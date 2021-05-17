@@ -681,12 +681,6 @@ $container_max: 1920px;
         width:50%;
         height:350px;
 
-        transition: all .2s ease-in-out;
-        &:hover{
-          transform: scale(1.1);
-          box-shadow: 0 0 100px #000;
-        }
-
         @media(max-width: 1550px){
           height:auto;
         }
@@ -695,6 +689,12 @@ $container_max: 1920px;
           padding:25px;
           background-color: $nonalcohol;
           height:100%;
+
+          transition: all .2s ease-in-out;
+          &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 100px #000;
+          }
 
           .soort-abbo{
             height:175px;

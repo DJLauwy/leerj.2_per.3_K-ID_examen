@@ -587,11 +587,6 @@ input[type=file] {
   padding: 2px;
   width: 50%;
   height: 350px;
-  transition: all 0.2s ease-in-out;
-}
-.abonneren .container .block-holder .block:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 100px #000;
 }
 @media (max-width: 1550px) {
   .abonneren .container .block-holder .block {
@@ -602,6 +597,11 @@ input[type=file] {
   padding: 25px;
   background-color: #FFCC4D;
   height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.abonneren .container .block-holder .block .content:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 100px #000;
 }
 .abonneren .container .block-holder .block .content .soort-abbo {
   height: 175px;
