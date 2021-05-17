@@ -170,10 +170,10 @@ input[type=file] {
 .nav {
   position: fixed;
   z-index: 5;
+  background: #F28E1C;
 }
 .nav .container {
   padding: 0;
-  background: #F28E1C;
   height: 130px;
   display: flex;
   justify-content: space-between;
@@ -220,6 +220,7 @@ input[type=file] {
 
 .hero {
   padding-top: 130px;
+  height: 100%;
 }
 .hero .background {
   background: url("../img/hero_bg.jpg");
@@ -227,8 +228,11 @@ input[type=file] {
   background-size: cover;
   height: 420px;
 }
-.hero .background .container {
+.hero .background .background-cover {
   background: rgba(0, 0, 0, 0.42);
+  height: 100%;
+}
+.hero .background .container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -275,7 +279,7 @@ input[type=file] {
   align-items: center;
 }
 .featured-left .container {
-  margin: 150px 0;
+  margin: 150px auto;
 }
 .featured-left .container .row {
   display: flex;
@@ -316,7 +320,7 @@ input[type=file] {
 }
 
 .featured-right .container {
-  margin: 150px 0;
+  margin: 150px auto;
 }
 .featured-right .container .row {
   display: flex;
@@ -357,7 +361,7 @@ input[type=file] {
 }
 
 .contact .container {
-  margin: 100px 0;
+  margin: 100px auto;
 }
 .contact .container .row {
   display: flex;
@@ -386,7 +390,7 @@ input[type=file] {
 }
 
 .login .container {
-  margin: 100px 0;
+  margin: 100px auto;
 }
 .login .container .row {
   display: flex;
@@ -436,7 +440,7 @@ input[type=file] {
 }
 
 .register .container {
-  margin: 100px 0;
+  margin: 100px auto;
 }
 .register .container .row {
   display: flex;
@@ -530,7 +534,7 @@ input[type=file] {
 }
 
 .pakketten .container {
-  margin: 100px 0;
+  margin: 100px auto;
 }
 .pakketten .container .row .title {
   padding: 25px 0;
@@ -561,7 +565,7 @@ input[type=file] {
 }
 
 .abonneren .container {
-  margin: 100px 0;
+  margin: 100px auto;
 }
 .abonneren .container .row .title {
   padding: 25px 0;
@@ -578,6 +582,7 @@ input[type=file] {
   flex-wrap: wrap;
 }
 .abonneren .container .block-holder .block {
+  display: block;
   padding: 2px;
   width: 50%;
   height: 350px;
@@ -744,7 +749,7 @@ input[type=file] {
 }
 
 .samenstellen .container {
-  margin: 150px 0;
+  margin: 150px auto;
 }
 .samenstellen .container .row {
   display: flex;

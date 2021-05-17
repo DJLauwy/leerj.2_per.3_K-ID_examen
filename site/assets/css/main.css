@@ -1,0 +1,9 @@
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+body nav p {
+  background-color: #000;
+  color: #fff;
+}
